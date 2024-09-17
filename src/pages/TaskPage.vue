@@ -49,11 +49,11 @@
 
 <script setup>
   import {onMounted} from "vue";
-  import api from "../http/api.js";
+  import api from "@/http/api.js";
 
   onMounted(async () => {
    const { data } = await api.get('/tasks')
 
-    console.log(data)
+    console.log(data);
   })
 </script>
